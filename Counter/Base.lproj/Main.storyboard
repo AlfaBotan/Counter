@@ -29,7 +29,7 @@
                                     <color key="baseForegroundColor" systemColor="systemPinkColor"/>
                                 </buttonConfiguration>
                                 <connections>
-                                    <action selector="pressMinusButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="kJs-Ei-5Pj"/>
+                                    <action selector="minusButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="kJs-Ei-5Pj"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XAp-Oe-p6A">
@@ -50,7 +50,7 @@
                                     <color key="baseForegroundColor" systemColor="systemPinkColor"/>
                                 </buttonConfiguration>
                                 <connections>
-                                    <action selector="pressPlusButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="pFf-Y1-LAf"/>
+                                    <action selector="plusButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="pFf-Y1-LAf"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" horizontalCompressionResistancePriority="749" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jrt-a6-3Dv">
@@ -63,7 +63,7 @@
                                     <preferredSymbolConfiguration key="preferredSymbolConfigurationForImage" configurationType="pointSize" pointSize="40"/>
                                 </buttonConfiguration>
                                 <connections>
-                                    <action selector="refreshButon:" destination="BYZ-38-t0r" eventType="touchUpInside" id="sqH-cm-3nY"/>
+                                    <action selector="refreshButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="sqH-cm-3nY"/>
                                 </connections>
                             </button>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" text="История изменений:" translatesAutoresizingMaskIntoConstraints="NO" id="6NZ-mW-k9h">
@@ -94,8 +94,8 @@
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="counterLable" destination="XAp-Oe-p6A" id="L4g-Ra-fOz"/>
-                        <outlet property="textView" destination="6NZ-mW-k9h" id="cPP-Ow-bR1"/>
+                        <outlet property="counterLabel" destination="XAp-Oe-p6A" id="L4g-Ra-fOz"/>
+                        <outlet property="historyTextView" destination="6NZ-mW-k9h" id="cPP-Ow-bR1"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
